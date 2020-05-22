@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
 export class SignupComponent implements OnInit {
 
   constructor(private _Router:Router) { }
-
   ngOnInit(): void {
   }
 

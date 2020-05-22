@@ -2,3 +2,6 @@
 input.ng-invalid.ng-touched{
     border: red 1px solid;
 }
+
+.bg-blue{background: #6658dd;}
+.hide{display: none;}

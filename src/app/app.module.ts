@@ -11,6 +11,8 @@ import { ForgetpasswordComponent } from './login/forgetpassword/forgetpassword.c
 import { SignupComponent } from './login/signup/signup.component';
 import { PagenotfoundComponent } from './login/pagenotfound/pagenotfound.component';
 import { MainDashbordComponent } from './Dashbord/main-dashbord/main-dashbord.component';
+import { CrateAnimalComponent } from './Animal/crate-animal/crate-animal.component';
+import { DashbordmenuComponent } from './Dashbord/dashbordmenu/dashbordmenu.component';
 
 
 @NgModule({
@@ -23,6 +25,8 @@ import { MainDashbordComponent } from './Dashbord/main-dashbord/main-dashbord.co
     SignupComponent,
     PagenotfoundComponent,
     MainDashbordComponent,
+    CrateAnimalComponent,
+    DashbordmenuComponent,
 
   ],
   imports: [

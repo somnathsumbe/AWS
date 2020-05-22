@@ -1,0 +1,63 @@
+<div class="card-header border">
+  <h4 class="card-title mb-0">Create Animal Test</h4>
+</div>
+<div class="bg-white border">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <form #createanimaltest="ngForm" (ngSubmit)="createTest(createanimaltest)">
+            <div class="row">
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Test Status</label>
+
+                  <select class="form-control" name="testStatus" id="testStatus" ngModel #testStatus='ngModel' required>
+                    <option value="" selected>Select Test Status</option>
+                    <option *ngFor="let AnimaltestStatus of AnimaltestStatus" [value]="AnimaltestStatus">
+                      {{AnimaltestStatus}}
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Test Type</label>
+                  <select class="form-control" name="testType" id="testType" ngModel #testType='ngModel' required>
+                    <option value="" selected>Select Test Type</option>
+                    <option *ngFor="let AnimaltestType of AnimaltestType ;index as i" [value]="AnimaltestType">
+                      {{AnimaltestType}}
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Animal Group Numbe</label>
+
+                  <input type="text" class="form-control flatpickr-input" value=""
+                    placeholder="Select Animal Group Numbe" id="animalGroupNumber" name="animalGroupNumber" ngModel
+                    #animalGroupNumber='ngModel' required>
+                  <span *ngIf="!animalGroupNumber.valid && (animalGroupNumber.touched || animalGroupNumber.dirty)"
+                    class="text-danger small">
+                    <small *ngIf='animalGroupNumber.errors["required"]'>Animal Group Numbe required</small>
+                  </span>
+                </div>
+              </div>
+
+
+              <div class="col-md-12 mt-4">
+                <div class="button-list">
+                  <button type="submit" class="btn btn-primary waves-effect waves-light"
+                    [disabled]="!createanimaltest.valid">Submit</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,58 +1,36 @@
-	<!-- Header Area Start  -->
-	<header class="header">
-		<!--Main-Menu Area Start-->
-		<div class="mainmenu-area">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">                 
-						<nav class="navbar navbar-expand-lg navbar-light">
-							<a class="navbar-brand" href="index.html">
-                                Animal Tracking System - ATS
-								<!-- <img src="images/logo.png" class="logo" alt="Converge Money"> -->
-							</a>
-							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_menu" aria-controls="main_menu"
-								aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
-							</button>
-							<div class="collapse navbar-collapse fixed-height" id="main_menu">
-								<ul class="navbar-nav ml-auto">
-									<li class="nav-item">
-										<a class="nav-link" href="index.html">Home</a>
-									</li>
-									<!-- <li class="nav-item">
-										<a class="nav-link" href="aboutus">About</a>
-									</li> -->
-									
-								
-																		<li class="nav-item">
-										<a class="nav-link" href="invest.html">Invest</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="business.html">Business</a>
-									</li>
-									
-									<li class="nav-item dropdown">
-										<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Solutions
-										</a>
-										<ul class="dropdown-menu">
-											<li><a class="dropdown-item" href="businessfinance.html"> <i class="fa fa-angle-double-right"></i>Business Finance</a></li>
-											<li><a class="dropdown-item" href="invoicefinance.html"> <i class="fa fa-angle-double-right"></i>Invoice Financing</a></li>
-											<li><a class="dropdown-item" href="propertyfinance.html"> <i class="fa fa-angle-double-right"></i> Property Finance</a></li>
-										</ul>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="contact.html">Contact</a>
-									</li>
-								</ul>
-																	<a href="login.html" class="mybtn1 mybtn2">Log In </a>
-									<a href="register.html" class="mybtn1 mybtn2">Sign Up </a>	
-															</div>
-						</nav>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--Main-Menu Area Start-->
-	</header>
-	<!-- Header Area End  -->
+<header id="topnav">
+	<nav class="navbar navbar-expand-md  navbar-dark">
+	  <!-- Brand -->
+	  <a class="bg-blue font-weight-bolder navbar-brand px-4 text-white" >ATS</a>
+	
+	  <!-- Toggler/collapsibe Button -->
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	
+	  <!-- Navbar links -->
+	  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+		  <li class="nav-item">
+			<a class="nav-link" [routerLink]="'dashbord'" routerLinkActive="router-link-active"  >Link</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" [routerLink]="'dashbord'" routerLinkActive="router-link-active"  >Link</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" [routerLink]="'dashbord'" routerLinkActive="router-link-active"  >Link</a>
+		  </li>
+		</ul>
+
+	
+
+
+	  </div>
+	  <ul class="navbar-nav float-right">
+		<div style="cursor: pointer;" title ="Logout" class="avatar-lg rounded-circle bg-danger bg-soft-primary border-primary border" (click)="logout()">
+			<i class="icofont-users-alt-4 font-22 avatar-title"></i>
+		  </div>
+	</ul>
+	</nav>
+
+

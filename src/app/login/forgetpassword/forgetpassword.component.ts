@@ -7,10 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./forgetpassword.component.css']
 })
 export class ForgetpasswordComponent implements OnInit {
-
+  isheader:boolean;
   constructor(private _Router:Router) { }
 
   ngOnInit(): void {
+
   }
 
   loginPage=()=>this._Router.navigate(['']);
